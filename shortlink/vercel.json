@@ -1,23 +1,17 @@
 {
   "version": 2,
-  "builds": [
-    {
-      "src": "api/**/*.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
     {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/([a-zA-Z0-9]{6})",
+      "src": "/s/([^/]+)",
       "dest": "/api/redirect?code=$1"
     },
     {
-      "src": "/(.*)",
+      "src": "/(.*\\.(html|css|js|png|jpg|jpeg|gif|svg|ico))",
       "dest": "/public/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/public/index.html"
     }
   ]
 }
