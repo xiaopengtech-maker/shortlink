@@ -1,0 +1,18 @@
+{
+  "name": "url-shortener",
+  "version": "1.0.0",
+  "description": "Simple URL Shortener for Vercel deployment - No Database Required",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod"
+  },
+  "keywords": [
+    "url-shortener",
+    "vercel",
+    "serverless",
+    "base64"
+  ],
+  "author": "",
+  "license": "ISC"
+}
